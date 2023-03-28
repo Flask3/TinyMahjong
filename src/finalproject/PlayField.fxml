@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="finalproject.Playfield">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@images/table.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="table_mid" fitHeight="600.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/table_middle.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="Player1Points" layoutX="380.0" layoutY="353.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <HBox fx:id="Player1ChiPongGangBox" alignment="TOP_RIGHT" layoutX="370.0" layoutY="547.0" prefHeight="39.0" prefWidth="377.0" />
+      <Button fx:id="button1" layoutX="32.0" layoutY="550.0" mnemonicParsing="false" onAction="#Throw1" style="-fx-background-color: TRANSPARENT;" translateX="70.0" translateY="-30.0" />
+      <Button fx:id="button2" layoutX="72.0" layoutY="550.0" mnemonicParsing="false" onAction="#Throw2" style="-fx-background-color: TRANSPARENT;" translateX="70.0" translateY="-30.0" />
+      <Button fx:id="button3" layoutX="112.0" layoutY="550.0" mnemonicParsing="false" onAction="#Throw3" style="-fx-background-color: TRANSPARENT;" translateX="70.0" translateY="-30.0" />
+      <Button fx:id="button4" layoutX="152.0" layoutY="550.0" mnemonicParsing="false" onAction="#Throw4" style="-fx-background-color: TRANSPARENT;" translateX="70.0" translateY="-30.0" />
+      <Button fx:id="button5" layoutX="192.0" layoutY="550.0" mnemonicParsing="false" onAction="#Throw5" style="-fx-background-color: TRANSPARENT;" translateX="70.0" translateY="-30.0" />
+      <Button fx:id="button7" layoutX="272.0" layoutY="550.0" mnemonicParsing="false" onAction="#Throw7" style="-fx-background-color: TRANSPARENT;" translateX="70.0" translateY="-30.0" />
+      <Button fx:id="button8" layoutX="312.0" layoutY="550.0" mnemonicParsing="false" onAction="#Throw8" style="-fx-background-color: TRANSPARENT;" translateX="70.0" translateY="-30.0" />
+      <Button fx:id="button9" layoutX="352.0" layoutY="550.0" mnemonicParsing="false" onAction="#Throw9" style="-fx-background-color: TRANSPARENT;" translateX="70.0" translateY="-30.0" />
+      <Button fx:id="button11" layoutX="432.0" layoutY="550.0" mnemonicParsing="false" onAction="#Throw11" style="-fx-background-color: TRANSPARENT;" translateX="70.0" translateY="-30.0" />
+      <Button fx:id="button12" layoutX="472.0" layoutY="550.0" mnemonicParsing="false" onAction="#Throw12" style="-fx-background-color: TRANSPARENT;" translateX="70.0" translateY="-30.0" />
+      <Button fx:id="button13" layoutX="512.0" layoutY="550.0" mnemonicParsing="false" onAction="#Throw13" style="-fx-background-color: TRANSPARENT;" translateX="70.0" translateY="-30.0" />
+      <Button fx:id="button14" layoutX="552.0" layoutY="550.0" mnemonicParsing="false" onAction="#Throw14" style="-fx-background-color: TRANSPARENT;" translateX="70.0" translateY="-30.0" />
+      <GridPane fx:id="riverpane" gridLinesVisible="true" layoutX="318.0" layoutY="409.0" prefHeight="102.0" prefWidth="154.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+      </GridPane>
+      <GridPane fx:id="riverpane4" gridLinesVisible="true" layoutX="155.0" layoutY="245.0" prefHeight="102.0" prefWidth="154.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <GridPane fx:id="riverpane3" gridLinesVisible="true" layoutX="330.0" layoutY="90.0" prefHeight="102.0" prefWidth="154.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <GridPane fx:id="riverpane2" gridLinesVisible="true" layoutX="491.0" layoutY="253.0" prefHeight="102.0" prefWidth="154.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <Text fx:id="RemainCardAmount" layoutX="372.0" layoutY="326.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="54.666666666666515">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <Button fx:id="button_hu" layoutX="-300.0" layoutY="46.0" mnemonicParsing="false" onAction="#PressHu" />
+      <Button fx:id="button_cancel" layoutX="540.0" layoutY="473.0" mnemonicParsing="false" onAction="#PressCancel" visible="false" />
+      <Button fx:id="button_pong" layoutX="-300.0" layoutY="46.0" mnemonicParsing="false" onAction="#PressPong" />
+      <Button fx:id="button_zhimo" layoutX="-300.0" layoutY="46.0" mnemonicParsing="false" onAction="#PressZhimo" />
+      <Button fx:id="button_chi" layoutX="-300.0" layoutY="46.0" mnemonicParsing="false" onAction="#PressChi" />
+      <Button fx:id="button_gang" layoutX="-300.0" layoutY="46.0" mnemonicParsing="false" onAction="#PressGang" />
+      <Button fx:id="button_selfgang" layoutX="-300.0" layoutY="46.0" mnemonicParsing="false" onAction="#PressSelfGang" />
+      <Text fx:id="CurrentRound" layoutX="368.0" layoutY="291.5" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="66.66668701171875">
+         <font>
+            <Font size="23.0" />
+         </font></Text>
+      <HBox fx:id="ChiPane" layoutX="115.0" layoutY="453.0" prefHeight="57.0" prefWidth="209.0" visible="false" />
+      <HBox fx:id="ButtonBox" alignment="TOP_RIGHT" layoutX="19.0" layoutY="473.0" prefHeight="51.0" prefWidth="521.0" visible="false" />
+      <Button fx:id="button10" layoutX="392.0" layoutY="550.0" mnemonicParsing="false" onAction="#Throw10" style="-fx-background-color: TRANSPARENT;" translateX="70.0" translateY="-30.0" />
+      <Button fx:id="button6" layoutX="232.0" layoutY="550.0" mnemonicParsing="false" onAction="#Throw6" style="-fx-background-color: TRANSPARENT;" translateX="70.0" translateY="-30.0" />
+      <HBox fx:id="Player2ChiPongGangBox" alignment="TOP_RIGHT" layoutX="558.0" layoutY="422.0" prefHeight="39.0" prefWidth="377.0" />
+      <Text fx:id="Player2Points" layoutX="428.0" layoutY="305.0" rotate="-90.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Text fx:id="Player3Points" layoutX="380.0" layoutY="256.0" rotate="180.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Text fx:id="Player4Points" layoutX="332.0" layoutY="305.0" rotate="90.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <HBox fx:id="Player3ChiPongGangBox" alignment="TOP_RIGHT" layoutX="26.0" layoutY="7.0" prefHeight="39.0" prefWidth="377.0" />
+      <HBox fx:id="Player4ChiPongGangBox" alignment="TOP_RIGHT" layoutX="-149.0" layoutY="334.0" prefHeight="39.0" prefWidth="377.0" />
+      <Button fx:id="button_richi" layoutX="-300.0" layoutY="56.0" mnemonicParsing="false" onAction="#PressRichi" />
+      <HBox fx:id="dorabox" layoutX="613.0" layoutY="17.0" prefHeight="82.0" prefWidth="173.0" />
+      <ImageView fx:id="gray" fitHeight="600.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@images/gray.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="button_newgame" layoutX="645.0" layoutY="531.0" mnemonicParsing="false" onAction="#PressNewGame" visible="false" />
+      <Pane fx:id="CountScorePane" layoutX="100.0" layoutY="100.0" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/result.png" />
+               </image>
+            </ImageView>
+            <HBox fx:id="TotalPointBox" alignment="CENTER" layoutX="409.0" layoutY="263.0" prefHeight="128.0" prefWidth="182.0" />
+            <HBox fx:id="UraDoraBox" alignment="CENTER_LEFT" layoutX="439.0" layoutY="182.0" prefHeight="51.0" prefWidth="182.0" />
+            <HBox layoutX="55.0" layoutY="17.0" prefHeight="57.0" prefWidth="545.0" spacing="50.0">
+               <children>
+                  <HBox fx:id="PlayerCardBox" />
+                  <HBox fx:id="PlayerChiPongGangBox" />
+                  <HBox fx:id="TheLastBox" />
+               </children>
+            </HBox>
+            <HBox fx:id="DoraBox2" alignment="CENTER_LEFT" layoutX="439.0" layoutY="99.0" prefHeight="51.0" prefWidth="182.0" />
+            <HBox layoutX="24.0" layoutY="114.0" prefHeight="211.0" prefWidth="377.0" spacing="200.0">
+               <children>
+                  <VBox fx:id="YakuBox" layoutX="50.0" layoutY="50.0" />
+               </children>
+            </HBox>
+            <HBox fx:id="TotalBox" alignment="CENTER_RIGHT" layoutX="-31.0" layoutY="341.0" prefHeight="51.0" prefWidth="387.0" />
+            <HBox alignment="TOP_RIGHT" layoutX="24.0" layoutY="114.0" prefHeight="211.0" prefWidth="355.0" spacing="200.0">
+               <children>
+                  <VBox fx:id="HanListBox" />
+               </children>
+            </HBox>
+         </children>
+      </Pane>
+      <Text fx:id="liug" layoutX="400.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" visible="false" />
+      <Button fx:id="FinalButton" layoutX="550.0" layoutY="500.0" mnemonicParsing="false" onAction="#PressFinalButton" visible="false" />
+      <HBox fx:id="TingPaiBox" alignment="CENTER_LEFT" layoutX="579.0" layoutY="450.0" prefHeight="100.0" prefWidth="182.0" visible="false" />
+   </children>
+</Pane>
